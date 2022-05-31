@@ -13,31 +13,31 @@ let salas = [{
     },
     {
         titulo_sala: "Salon Recepcion",
-        texto_sala: "lorem dasndashjdhasjkhfcuiwfnuiawnfuiwh"
+        texto_sala: "lorem dhfcnfuiwh"
     },
     {
         titulo_sala: "Torre",
-        texto_sala: "lorem dasndashjdhasjkhfcuiwfnuiawnfuiwh"
+        texto_sala: "loresjkhfcuiwfnuiawnfuiwh"
     },
     {
         titulo_sala: "Sala de Armas",
-        texto_sala: "lorem dasndashjdhasjkhfcuiwfnuiawnfuiwh"
+        texto_sala: "lorem dasndashjdhgfgdghghgfghggggggasjkhfcuiwfnuiawnfuiwh"
     },
     {
         titulo_sala: "Caballerizas",
-        texto_sala: "lorem dasndashjdhasjkhfcuiwfnuiawnfuiwh"
+        texto_sala: "lorem dasndashjdhasjkhfyhytnyhfcuiwfnuiawnfuiwh"
     },
     {
         titulo_sala: "Salon del Comedor",
-        texto_sala: "lorem dasndashjdhasjkhfcuiwfnuiawnfuiwh"
+        texto_sala: "lorem dasndashjdhasjkhfcuiwfngfhfgfggiawnfuiwh"
     },
     {
         titulo_sala: "Sala Real",
-        texto_sala: "lorem dasndashjdhasjkhfcuiwfnuiawnfuiwh"
+        texto_sala: "lorem dasndashjwfnuiawnfuiwh"
     },
     {
         titulo_sala: "Dormitorio del Rey",
-        texto_sala: "lorem dasndashjdhasjkhfcuiwfnuiawnfuiwh"
+        texto_sala: "lorem dasndashjdhasjiwfnuiawnfuiwh"
     }
 
 ]
@@ -62,7 +62,7 @@ button_do.addEventListener("click", () => {
     }
 
     let verb = split_command[0];
-    let paramter = split_command[1];
+    let parameter = split_command[1];
 
     if (!avalible_verbs.includes(verb)) {
         commands.value = ''
@@ -70,6 +70,8 @@ button_do.addEventListener("click", () => {
         return
     }
 
+    titulo_sala.innerHTML = salas[parseInt(parameter)].titulo_sala
+    texto_sala.innerHTML = salas[parseInt(parameter)].texto_sala
 
     console.log(split_command)
 })
