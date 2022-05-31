@@ -4,7 +4,7 @@ body {
     font-family: monospace;
 }
 
-#description {
+#texto_sala {
     display: block;
     border: 2px solid black;
     width: 80vw;
