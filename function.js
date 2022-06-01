@@ -2,9 +2,9 @@ let salas = [{
         titulo_sala: "Patio de entrada",
         texto_sala: "Patio de entrada",
         acciones: {
-            mirar: [
-
-            ]
+            ir: {
+                norte: 1
+            }
         }
     },
     {
@@ -28,6 +28,7 @@ let salas = [{
         texto_sala: "lorem dasndashjdhasjkhfyhytnyhfcuiwfnuiawnfuiwh"
     },
     {
+
         titulo_sala: "Salon del Comedor",
         texto_sala: "lorem dasndashjdhasjkhfcuiwfngfhfgfggiawnfuiwh"
     },
@@ -57,7 +58,7 @@ button_do.addEventListener("click", () => {
 
     if (split_command.length != 2) {
         commands.value = ''
-        alert('EL comando no es correcto')
+        alert('EL comando no es correcto, dos palabras comenzando con un verbo')
         return
     }
 
@@ -66,7 +67,7 @@ button_do.addEventListener("click", () => {
 
     if (!avalible_verbs.includes(verb)) {
         commands.value = ''
-        alert('EL verbo no es correcto')
+        alert('EL verbo no es correcto, recuerda ir, coger, usar, mirar, hablar')
         return
     }
 
